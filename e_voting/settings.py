@@ -90,13 +90,12 @@ WSGI_APPLICATION = 'e_voting.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#DATABASES = {
-    #   You can use this :
-  #  'default': {
-   #     'ENGINE': 'django.db.backends.sqlite3',
-    #    'NAME': BASE_DIR / 'db.sqlite3',
-   # }
-
+DATABASES = {
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': BASE_DIR / 'db.sqlite3',
+   }
+}
     # 'default': {
     #     'ENGINE': 'django.db.backends.mysql',
     #     'NAME': 'e_voting',
@@ -106,9 +105,9 @@ WSGI_APPLICATION = 'e_voting.wsgi.application'
     # }
 #}
 
-DATABASES = {
-  "default":dj_database_url.parse(env("DATABASE_URL"))
-}
+# DATABASES = {
+#   "default":dj_database_url.parse(env("DATABASE_URL"))
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
