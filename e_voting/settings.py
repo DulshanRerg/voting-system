@@ -105,10 +105,20 @@ WSGI_APPLICATION = 'e_voting.wsgi.application'
     #     'PASSWORD': ''
     # }
 #}
-
 DATABASES = {
-  "default":dj_database_url.parse(env("DATABASE_URL"))
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'sosjut_db',
+        'USER': 'sosjut_db_user',
+        'PASSWORD': 'au3iyyFYskS4rlKUbYH9IBKD0XQnjWyh',
+        'HOST': 'dpg-cnoq5cmd3nmc73do00m0-a.oregon-postgres.render.com',  # Specify the hostname here
+        'PORT': '',  # Optional: specify the port if it's not the default (5432)
+    }
 }
+
+# DATABASES = {
+#   "default":dj_database_url.parse(env("DATABASE_URL"))
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
