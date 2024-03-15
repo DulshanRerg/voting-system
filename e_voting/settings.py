@@ -108,13 +108,14 @@ WSGI_APPLICATION = 'e_voting.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sosjut_db',
-        'USER': 'sosjut_db_user',
-        'PASSWORD': 'au3iyyFYskS4rlKUbYH9IBKD0XQnjWyh',
-        'HOST': 'dpg-cnoq5cmd3nmc73do00m0-a.oregon-postgres.render.com',  # Specify the hostname here
+        'NAME': 'votingsystem_db',
+        'USER': 'votingsystem_user',
+        'PASSWORD': 'eaE4mlIT1metMQXpzEywR628tkLnS6ll',
+        'HOST': 'dpg-cnpu0tgl6cac73apnsi0-a.oregon-postgres.render.com',  # Specify the hostname here
         'PORT': '',  # Optional: specify the port if it's not the default (5432)
     }
 }
+
 
 # DATABASES = {
 #   "default":dj_database_url.parse(env("DATABASE_URL"))
