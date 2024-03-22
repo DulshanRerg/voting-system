@@ -97,7 +97,7 @@ def generate_otp():
     """Generates OTP in the form of 'SOUSJUTxxxx'."""
     otp = "SOUSJUT"
     for i in range(4):
-        otp += str(r.randint(0, 9))
+        otp += str(r.randint(0, 10))
     return otp
 
 
