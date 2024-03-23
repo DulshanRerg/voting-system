@@ -44,10 +44,10 @@ aria-hidden="true">&times;</button>
       $(document).on('click', '.platform', function(e) {
           e.preventDefault();
           $('#bio').modal('show');
-          var platform = $(this).data('bio');
+          var cv = $(this).data('bio');
           var fullname = $(this).data('fullname');
           $('.candidate').html(fullname);
-          $('#plat_view').html(platform);
+          $('#plat_view').html(cv);
       });
 
       $('#preview').click(function(e) {
